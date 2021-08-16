@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:xmi="http://www.omg.org/XMI" defaultContext="Default" jobType="Standard" xmi:version="2.0">
   <context confirmationNeeded="false" name="Default"/>
   <parameters>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="0"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" show="false" value="0"/>
     <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" show="false" value=""/>
     <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" show="false" value=""/>
     <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" show="false" value=""/>
@@ -40,7 +42,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:VYZIbbFuw1FFPgCrkZG3rxT2vvDHjqMYfmg50H1M"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:rvMXxQ7Gj2u4Ls/zusK3vTzjKYRqCOY3xe84cUYU"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -75,7 +77,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:b7V04RpUiHZw8etSgmhYh0TNjppdocm5WCkNXHeQ"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:laI2craD5sOCrVhO0COIDuIahW1DLOhfcF32P/zB"/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
@@ -110,13 +112,25 @@
     <routinesParameter id="_hIidMP5wEeu29MBP4E0bZw" name="TalendStringUtil"/>
     <routinesParameter id="_hIeLwP5wEeu29MBP4E0bZw" name="TalendString"/>
   </parameters>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_ae2101b5-13aa-4d5b-8ce2-692ebaf6662c"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>c5FJ8J/Pi9CvLtjYPKid83d9GXTTG6+yHRSQg2DLGfX8mLgHd4bMWJEanZDQj5A+UUcWwBqbFdHE&#13;
-YtHcpxkUpA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_06c9f1f4-16bf-41f3-a950-05d9b73c140d"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>cbyaSNImJDbTwiL+rRPR49dQQ5aHCsM5itUZr/mSfNbapSrL3l8TVK3S+fTiAMyL19j4DPk64ewu&#13;
-xcXTlSXH8Q==</DigestValue></Reference></SignedInfo><SignatureValue>WWu3j2VQwpyxUL+6UxqjD70oyQR5DRoUJ0KDpDzfBRAUu7GYC1lbEzu5bBviUo7y625teNBJcO+O&#13;
-B2Nz1Dj/SAbHsRQ+Zj7wYk6RvR9HrjgnFM1nldliFbYZs6TJHyaNWW5npJOM5lgFdf1GPmbu1No6&#13;
-FUEC0o1kvsUVekwzfwaaO62yRQ8G7h4i4PDUCvlJEXw4qGMwB1WN+9YO2TPeVSG+wKioP/wdnYLn&#13;
-Mr19BhnYwzepnx95E2CQ/CEjR2JRFQecB2yPj7FvBlpM3dSTKD2ZvTbZXLntmFXLPJke5tSgMLn4&#13;
-BYJzXB5/nWwphA3ZKNvIE/hWUPejoehGY7tYfA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="416" posY="256">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_1"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="String foo = &quot;bar&quot;;"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJava_1"/>
+  </node>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_6495953d-1bc6-4d04-8298-aa163aac8cde"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>O++wD4c3Yp10BrIFv+CidxrHSS6n1n/FKxCVd3hHRV3ZHB/p4jx7M0rcPOxXdppcBuj+nn30zwhJ&#13;
+LHH9fmb9wQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_8d166783-58c7-4267-9229-397ebe0a49fa"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>R8JeG0wFS8o+sklxBH4/SFDJ//3aT21Lh8hLXyuGH++oc4IXWgXKaEX1DjYyMpwAPix7E7GcT4LC&#13;
+N+Vv93WY6Q==</DigestValue></Reference></SignedInfo><SignatureValue>BAhOzQ2lmYzkFu+QgVd0g+273IX+GrPi+QFsmda5kVE16Yxl9po2Q4R+6Mjo8Sx5hRoS9t8m+3wj&#13;
+vPMjSqXe7wK6H87VLhMR4HZqqsUCyROUGHTYVPhOOzmCiEjyoPbeN2IMeAyTeAtJH8SqnX6H1xtv&#13;
+am6RfiWJcbVPFccyTYupNNWnC7b3mvkhily24z++uv3ObW+DhT/YQW9KzQ+4hQTdzuycqonAIfs/&#13;
+QjhW3u4UeqXCXkgI3k7aoVZ+cE9J9ONO+jm1tv4IJZhsRwSpRLaurS+2cS7QgSuyrE8k4FF3TlkM&#13;
+DKbVfCtxre15Y8aRCI/43uRgo/Zyuwb/I3cJ6g==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -138,4 +152,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_06c9f1f4-16bf-41f3-a950-05d9b73c140d" Target="#_ae2101b5-13aa-4d5b-8ce2-692ebaf6662c"><Timestamp>2021-08-16 09:04:54</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_8d166783-58c7-4267-9229-397ebe0a49fa" Target="#_6495953d-1bc6-4d04-8298-aa163aac8cde"><Timestamp>2021-08-16 09:04:59</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
